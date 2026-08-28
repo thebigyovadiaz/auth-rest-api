@@ -1,0 +1,29 @@
+### Home Resource
+GET http://localhost:8080/resource
+Accept: application/json
+
+### Home with Basic Auth
+GET http://localhost:8080/resource
+Accept: application/json
+Authorization: Basic YWRtaW46c2VjcmV0
+
+
+### Get token to use a resource
+GET http://localhost:8080/login
+Content-Type: application/json
+Authorization: Basic YWRtaW46c2VjcmV0
+
+### Resource with Beare Token Auth
+GET http://localhost:8080/resource
+Accept: application/json
+Authorization: Beare 1c86e4ce6a2274750768d093a2b265d14842a329
+
+### Get JWT to use a resource
+GET http://localhost:8080/login
+Content-Type: application/json
+Authorization: Basic YWRtaW46c2VjcmV0
+
+### Resource with Beare Token Auth
+GET http://localhost:8080/resource
+Accept: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lIiwiZXhwIjoxNzg3OTM2MDczfQ.er9QL-nxnVpZE-y8kjxoy_SntCnAXRV7ait7NpfX1xI
